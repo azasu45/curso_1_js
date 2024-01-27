@@ -3,13 +3,32 @@
   "version": "1.0.0",
   "description": "The JavaScript template",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "start": "parcel",
+    "build": "parcel build",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "parcel": "^2.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0"
+    "eslint": "^7.2.0",
+    "husky": "^9.0.6",
+    "lint-staged": "^15.2.0",
+    "parcel": "^2.0.0",
+    "prettier": "3.2.4"
   },
-  "keywords": ["css", "javascript"]
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "source": [
+    "src/index.html",
+    "src/ejercicio_1/index.html",
+    "src/ejercicio_2/index.html",
+    "src/ejercicio_3/index.html",
+    "src/ejercicio_4/index.html",
+    "src/ejercicio_5/index.html",
+    "src/ejercicio_6/index.html"
+  ],
+  "keywords": [
+    "css",
+    "javascript"
+  ]
 }

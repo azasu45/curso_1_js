@@ -1,3 +1,29 @@
 body {
   font-family: sans-serif;
 }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 760px;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+th,
+td {
+  letter-spacing: 1px;
+  padding: 7.5px;
+  text-align: center;
+}
+
+thead > tr,
+tbody > tr {
+  border-bottom: 3px solid black;
+}
+
+thead tr th:not(:last-child),
+tbody tr td:not(:last-child),
+tbody tr th {
+  border-right: 3px solid black;
+}
